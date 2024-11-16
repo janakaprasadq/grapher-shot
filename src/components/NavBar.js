@@ -4,19 +4,12 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    setScrolled(offset > 50); // Adjust the threshold for when the effect starts
-  };
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    setActiveLink(location.pathname);
+  }, [location]);
 
   return (
     <>
@@ -36,27 +29,50 @@ const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link
+                  className={`nav-link ${activeLink === "/" ? "active" : ""}`}
+                  to="/"
+                >
                   PORTOFOLIO
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link
+                  className={`nav-link ${
+                    activeLink === "/about" ? "active" : ""
+                  }`}
+                  to="/about"
+                >
                   ABOUT ME
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/portfolio">
+                <Link
+                  className={`nav-link ${
+                    activeLink === "/portfolio" ? "active" : ""
+                  }`}
+                  to="/portfolio"
+                >
                   PORTFOLIO
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/price">
+                <Link
+                  className={`nav-link ${
+                    activeLink === "/price" ? "active" : ""
+                  }`}
+                  to="/price"
+                >
                   PRICE
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link
+                  className={`nav-link ${
+                    activeLink === "/contact" ? "active" : ""
+                  }`}
+                  to="/contact"
+                >
                   CONTACT
                 </Link>
               </li>

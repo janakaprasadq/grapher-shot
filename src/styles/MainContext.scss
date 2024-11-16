@@ -9,12 +9,10 @@
   //justify-content: left; /* Horizontally aligns content */
   text-align: center;
   position: relative;
-  border: 1px solid red;
 }
 
 .hero-section .container {
   max-width: 1000px; /* Constrain width for better centering */
-  border: 1px solid red;
   display: flex;
   //align-items: center;
   flex-direction: column;
@@ -22,17 +20,19 @@
 
 .hero-section h1 {
   font-size: 4rem;
-  font-weight: bold;
+  //font-weight: bold;
   margin-bottom: 20px; /* Add spacing below the heading */
-  border: 1px solid red;
-  align-self: left;
+  align-self: flex-start;
+  font-family: Cormorant;
 }
 
 .hero-section p {
   font-size: 1.2rem;
+  font-family: Lato, sans-serif;
   margin-bottom: 30px; /* Add spacing below the paragraph */
-  border: 1px solid red;
-  align-self: right;
+  align-self: flex-end;
+  text-align: left;
+  color: #898d92;
 }
 
 .order-button {
@@ -43,8 +43,8 @@
   font-size: 16px;
   color: #fff;
   background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 0;
+  border: 2px dashed #fff;
+  border-radius: 0 !important;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;

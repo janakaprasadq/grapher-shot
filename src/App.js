@@ -7,6 +7,7 @@ import MainContext from "./components/MainContext";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import React from "react";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

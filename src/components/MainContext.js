@@ -12,8 +12,9 @@ const MainContext = () => {
           </h1>
 
           <p className="mt-4">
-            Pellentesque Mauris A Lobortis In Bibendum Sed Lobortis Semper. Eget
-            Eu Vel Eu Vitae.
+            Pellentesque Mauris A Lobortis In <br />
+            Bibendum Sed Lobortis Semper. <br />
+            Eget Eu Vel Eu Vitae.
           </p>
 
           <button
