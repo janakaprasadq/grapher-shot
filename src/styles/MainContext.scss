@@ -1,0 +1,58 @@
+.hero-section {
+  background-image: url("../assets/noah.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; /* Vertically aligns content */
+  //justify-content: left; /* Horizontally aligns content */
+  text-align: center;
+  position: relative;
+  border: 1px solid red;
+}
+
+.hero-section .container {
+  max-width: 1000px; /* Constrain width for better centering */
+  border: 1px solid red;
+  display: flex;
+  //align-items: center;
+  flex-direction: column;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add spacing below the heading */
+  border: 1px solid red;
+  align-self: left;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px; /* Add spacing below the paragraph */
+  border: 1px solid red;
+  align-self: right;
+}
+
+.order-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.order-button:hover {
+  background-color: #f0a500;
+  color: #000;
+  border-color: #f0a500;
+}

@@ -1,0 +1,19 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+.navbar-dark .nav-link {
+  color: #9a9999;
+}
+
+.navbar-dark .navbar-brand {
+  font-weight: bold;
+  color: #9a9999;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
