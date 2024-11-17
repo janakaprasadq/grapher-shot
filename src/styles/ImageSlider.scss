@@ -1,0 +1,56 @@
+.image-slider {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.image-slider .slide {
+  padding: 10px;
+}
+
+.image-slider img {
+  width: 293px;
+  height: 358px;
+  margin: auto;
+  padding: 5px;
+}
+
+.slick-prev {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 102%;
+  left: 48% !important;
+}
+.slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 102%;
+  left: 52%;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  color: white;
+}
+
+.slick-prev::after,
+.slick-next::after {
+  font-size: 20px;
+  color: white;
+}
