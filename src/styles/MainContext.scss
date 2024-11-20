@@ -1,12 +1,12 @@
 .hero-section {
-  background-image: url("../assets/noah.jpg");
+  //background-image: url("../assets/noah.jpg");
   background-size: cover;
   background-position: center;
   color: white;
   min-height: 100vh;
   display: flex;
   align-items: center; /* Vertically aligns content */
-  //justify-content: left; /* Horizontally aligns content */
+  justify-content: center; /* Horizontally aligns content */
   text-align: center;
   position: relative;
 }
@@ -55,4 +55,33 @@
   background-color: #f0a500;
   color: #000;
   border-color: #f0a500;
+}
+
+.color-layers {
+  height: 100vh;
+  width: 100%;
+  z-index: -100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+
+  .color-layer-1 {
+    background: #233942;
+    width: 50%;
+    height: 100%;
+  }
+  .color-layer-2 {
+    background-color: 0d0f11;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.heroimg {
+  z-index: -99;
+  //padding-top: 20px;
+  position: absolute;
+  width: 50%;
+  align-self: flex-end;
 }
