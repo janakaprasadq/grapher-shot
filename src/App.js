@@ -8,6 +8,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import React from "react";
 import Footer from "./components/Footer";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   return (
@@ -24,6 +25,16 @@ function App() {
         </Routes>
         <Footer />
       </Router>
+      <FloatingWhatsApp
+        phoneNumber="+94713031383"
+        accountName="Janaka Prasad"
+        allowEsc
+        allowClickAway
+        notification
+        notificationSound
+        avatar="https://png.pngtree.com/png-vector/20230928/ourmid/pngtree-young-indian-man-png-image_10149659.png"
+        statusMessage="Online"
+      />
     </>
   );
 }

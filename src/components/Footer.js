@@ -10,12 +10,14 @@ const Footer = () => {
             <br /> discount prices
           </h1>
           <form class="subscribe-form">
-            <input
-              type="email"
-              placeholder="Enter Your Email Address"
-              required
-            />
-            <button type="submit">Submit</button>
+            <div className="input-with-button">
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                required
+              />
+              <button type="submit">Submit</button>
+            </div>
           </form>
           <p class="terms">
             * By clicking <strong>‘Submit’</strong> button, you agree to our

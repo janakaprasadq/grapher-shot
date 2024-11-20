@@ -9,8 +9,9 @@
 }
 
 .image-slider img {
-  width: 293px;
-  height: 358px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   margin: auto;
   padding: 5px;
 }
@@ -53,4 +54,39 @@
 .slick-next::after {
   font-size: 20px;
   color: white;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .image-slider img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-slider {
+    padding: 20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-slider img {
+    max-width: 200px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none; // Hide arrows on very small screens if needed
+  }
 }

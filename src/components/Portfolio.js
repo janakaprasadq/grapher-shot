@@ -212,7 +212,7 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="inner-items">
-              <img src={pencil}></img>
+              <img src={pencil} alt="Pencil"></img>
               <p>Agency</p>
               <p className="item-3">
                 Sagittis enim nullam pulvinar tellus sit egestas semper.
@@ -220,7 +220,7 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="inner-items">
-              <img src={bulb}></img>
+              <img src={bulb} alt="Bulb"></img>
               <p>Choose Idea</p>
               <p className="item-3">
                 Sagittis enim nullam pulvinar tellus sit egestas semper.
@@ -231,7 +231,7 @@ const Portfolio = () => {
 
           <div className="row-2">
             <div className="inner-items">
-              <img src={star}></img>
+              <img src={star} alt="Star"></img>
               <p>Satisfaction</p>
               <p className="item-3">
                 Sagittis enim nullam pulvinar tellus sit egestas semper.
@@ -239,7 +239,7 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="inner-items">
-              <img src={key}></img>
+              <img src={key} alt="Key"></img>
               <p>Quality</p>
               <p className="item-3">
                 Sagittis enim nullam pulvinar tellus sit egestas semper.
@@ -247,7 +247,7 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="inner-items">
-              <img src={light}></img>
+              <img src={light} alt="Lightning"></img>
               <p>Creativity</p>
               <p className="item-3">
                 Sagittis enim nullam pulvinar tellus sit egestas semper.
